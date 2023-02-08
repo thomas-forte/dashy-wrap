@@ -7,6 +7,10 @@ services:
     container_name: dashy
 
     restart: always
+    
+    # Remove the exposed ports if using network bridge with reverse proxy
+    ports:
+      - 4000:80
 
     environment:
       - NODE_ENV=production
@@ -21,8 +25,10 @@ services:
       retries: 3
       start_period: 40s
 
-networks:
-  default:
-    name: ${NETWORK_NAME}
-    external: true
+# Overrides the default network of the compose stack, use this for exposing dashy indirectly through a reverse proxy
+
+# networks:
+#   default:
+#     name: ${NETWORK_NAME}
+#     external: true
 
