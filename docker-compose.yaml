@@ -16,7 +16,7 @@ services:
       - NODE_ENV=production
       
     volumes:
-      - ./dashy-conf.yml:/app/public/conf.yml
+      - ./configs:/app/public/
 
     healthcheck:
       test: ["CMD", "node", "/app/services/healthcheck"]

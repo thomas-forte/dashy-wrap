@@ -1,0 +1,72 @@
+appConfig:
+  language: en
+  startingView: default
+  defaultOpeningMethod: newtab
+  statusCheck: false
+  statusCheckInterval: 0
+  # webSearch:
+  #   disableWebSearch: false
+  #   searchEngine: duckduckgo
+  #   openingMethod: newtab
+  #   searchBangs: {}
+  # backgroundImg: null
+  enableFontAwesome: true
+  enableMaterialDesignIcons: false
+  # fontAwesomeKey: ABC123
+  faviconApi: faviconkit
+  # auth:
+  #   enableGuestAccess: false
+  #   users: []
+  #   enableKeycloak: false
+  # defaultIcon: fas fa-question
+  layout: auto
+  iconSize: small
+  # colCount: 3
+  theme: lissy
+  # cssThemes: array
+  # customColors:
+  # externalStyleSheet:
+  # customCss:
+  hideComponents:
+    hideSearch: true
+    hideSettings: true
+    hideFooter: true
+    hideHeading: false
+    hideNav: false
+  routingMode: history
+  # enableMultiTasking: false
+  # workspaceLandingUrl:
+  # preventWriteToDisk: false
+  # preventLocalSave: false
+  # disableConfiguration: false
+  # disableConfigurationForNonAdmin: false
+  # widgetsAlwaysUseProxy: false
+  # showSplashScreen: false
+  # enableErrorReporting: false
+  # sentryDsn:
+  # disableSmartSort: false
+  # disableUpdateChecks: false
+  # enableServiceWorker: false
+  # disableContextMenu: false
+pageInfo:
+  title: My Dashy
+  description: ''
+  navLinks:
+    - title: Email
+      path: https://gmail.google.com/
+      target: newtab
+  footerText: ''
+sections:
+  - name: Linky:
+    icon: fas fa-ice-cream
+    items:
+      - title: Link:
+        description: link
+        icon: fas fa-project-diagram
+        url: https://google.com
+    displayData:
+      sortBy: default
+      rows: 1
+      cols: 4
+      collapsed: false
+      hideForGuests: false
